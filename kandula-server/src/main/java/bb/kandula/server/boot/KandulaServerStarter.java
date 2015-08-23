@@ -24,14 +24,14 @@ public class KandulaServerStarter {
     }
 
     private static void logStartupMessage() {
-        System.out.println("###########################################################");
-        System.out.println("###          Kandula Server Started Successfully          ###");
-        System.out.println("###########################################################");
+        System.out.println("#############################################################");
+        System.out.println("###          KANDULA Server Started Successfully          ###");
+        System.out.println("#############################################################");
     }
 
     private static void logStoppedMessage() {
-        System.out.println("###########################################################");
-        System.out.println("###          Kandula Server Stopped Successfully          ###");
-        System.out.println("###########################################################");
+        System.out.println("#############################################################");
+        System.out.println("###          KANDULA Server Stopped Successfully          ###");
+        System.out.println("#############################################################");
     }
 }
