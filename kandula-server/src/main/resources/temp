@@ -1,0 +1,46 @@
+
+User
+=====
+User Id
+Title
+First name
+Last name
+Date of Birth
+NIC/Passport
+Country
+Billing address
+Postal address
+Postal code
+Mobile no
+Email
+Account created date
+Account activated date
+Last updated date
+
+Security tokens
+===============
+Token Id
+User Id
+Security Token
+Generated date
+Generated Type (BY_USER, BY_SYSTEM)
+Security Token status(NEW, USED, EXPIRED)
+Last updated date
+
+Login sessions
+==============
+Session Id
+User Id
+Device Id
+User IP
+User Application
+Login Status
+Login time
+Log out time
+
+User devices
+============
+Device Id
+User Id
+Device name
+Device status

@@ -21,10 +21,10 @@
         </property>
     </bean>
 
-    <bean id="jaxbProvider"
-          class="org.apache.cxf.jaxrs.provider.JAXBElementProvider"/>
-    <bean id="jsonProvider"
-          class="org.apache.cxf.jaxrs.provider.json.JSONProvider"/>
+    <util:list id="jaxrs-encoding-providers">
+        <bean class="bb.kandula.server.utils.JsonBodyProvider" />
+    </util:list>
+
 
     <httpj:engine-factory id="kandula-server-jetty-config">
         <httpj:engine port="${http.listener.port}">
@@ -38,8 +38,7 @@
             <ref bean="kandulaRestService"/>
         </jaxrs:serviceBeans>
         <jaxrs:providers>
-            <ref bean="jaxbProvider"/>
-            <ref bean="jsonProvider"/>
+            <bean class="bb.kandula.server.utils.JsonBodyProvider" />
         </jaxrs:providers>
     </jaxrs:server>
 

@@ -46,17 +46,14 @@
             <groupId>org.codehaus.jettison</groupId>
             <artifactId>jettison</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>hms.maven.plugins</groupId>
-                <artifactId>spring-profile-plugin</artifactId>
-                <configuration>
-                    <activationFile>wrapper.conf</activationFile>
-                </configuration>
-            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -149,7 +146,7 @@
                             <tasks>
                                 <mkdir dir="${appassembler.basedir}/logs"/>
                                 <copy todir="${appassembler.basedir}/conf" overwrite="true">
-                                    <fileset dir="target/generated-resources/main"/>
+                                    <fileset dir="src/main/resources"/>
                                 </copy>
                             </tasks>
                         </configuration>
