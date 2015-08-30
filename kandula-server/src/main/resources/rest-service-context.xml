@@ -16,7 +16,7 @@
     <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="locations">
             <list>
-                <value>classpath:kandula-server.properties</value>
+                <value>classpath:server.properties</value>
             </list>
         </property>
     </bean>
@@ -35,7 +35,7 @@
     <jaxrs:server id="kandulaServer" address="${http.listener.address}"
                   depends-on="kandula-server-jetty-config">
         <jaxrs:serviceBeans>
-            <ref bean="kandulaRestService"/>
+            <ref bean="restService"/>
         </jaxrs:serviceBeans>
         <jaxrs:providers>
             <bean class="bb.kandula.server.utils.JsonBodyProvider" />

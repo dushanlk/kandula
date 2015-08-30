@@ -10,7 +10,7 @@
        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
 
-    <import resource="kandula-api-context.xml"/>
-    <import resource="kandula-rest-service-context.xml"/>
+    <import resource="api-context.xml"/>
+    <import resource="rest-service-context.xml"/>
 
 </beans>

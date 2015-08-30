@@ -80,7 +80,7 @@
                     <daemons>
                         <daemon>
                             <id>kandula-server</id>
-                            <mainClass>bb.kandula.server.boot.KandulaServerStarter</mainClass>
+                            <mainClass>bb.kandula.server.boot.ServerBoot</mainClass>
                             <platforms>
                                 <platform>jsw</platform>
                             </platforms>

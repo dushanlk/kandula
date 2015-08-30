@@ -3,10 +3,10 @@ package bb.kandula.server.boot;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class KandulaServerStarter {
+public class ServerBoot {
 
     public static void main(String[] args) throws Exception {
-        final ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("kandula-context.xml");
+        final ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
         context.registerShutdownHook();
 
         //TODO add snmp messages. Ref. SblStarter
